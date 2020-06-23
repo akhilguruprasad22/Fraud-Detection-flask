@@ -2,6 +2,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+  return "Hello"
+
 @app.route('/<string:a>/', methods=['POST'])
 def Return(a):
   return a+' Success.'
