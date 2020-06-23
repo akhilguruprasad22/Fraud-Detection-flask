@@ -1,1 +1,1 @@
-web: gunicorn app: flask-fraud-detection
+web: gunicorn flask-fraud-detection:app
